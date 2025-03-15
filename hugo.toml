@@ -2,7 +2,7 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'terminal'
-pagination.pagerSize = 5
+pagination.pagerSize = 10
 
 [params]
   # dir name of your main content (default is `content/posts`).
@@ -10,7 +10,7 @@ pagination.pagerSize = 5
   contentTypeName = "posts"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 3
 
   # show selector to switch language
   showLanguageSelector = false
@@ -19,7 +19,7 @@ pagination.pagerSize = 5
   fullWidthTheme = false
 
   # center theme with default width
-  centerTheme = false
+  centerTheme = true
 
   # if your resource directory contains an image called `cover.(jpg|png|webp)`,
   # then the file will be used as a cover automatically.
@@ -34,7 +34,7 @@ pagination.pagerSize = 5
   # updatedDatePrefix = "Updated"
 
   # whether to show a page's estimated reading time
-  # readingTime = false # default
+  readingTime = true
 
   # whether to show a table of contents
   # can be overridden in a page's front-matter
@@ -69,13 +69,12 @@ pagination.pagerSize = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
+    title = "Carl Adi"
 
     [languages.en.params]
-      subtitle = "A simple, retro theme for Hugo"
-      owner = ""
-      keywords = ""
-      copyright = ""
+      subtitle = "Personal blog for software development"
+      owner = "Carl Adi"
+      keywords = ["blog", "web development", "coding"]
       menuMore = "Show more"
       readMore = "Read more"
       readOtherPosts = "Read other posts"
@@ -87,7 +86,7 @@ pagination.pagerSize = 5
       words = "words"
 
       [languages.en.params.logo]
-        logoText = "Terminal"
+        logoText = "ǝɯoɥ︵╰(°□°╰)"
         logoHomeLink = "/"
 
       [languages.en.menu]
@@ -95,7 +94,30 @@ pagination.pagerSize = 5
           identifier = "about"
           name = "About"
           url = "/about"
+          weight = 10
+
         [[languages.en.menu.main]]
-          identifier = "showcase"
-          name = "Showcase"
-          url = "/showcase"
+          identifier = "blog"
+          name = "Blog"
+          url = "/posts"
+          weight = 20
+
+        [[languages.en.menu.main]]
+          identifier = "projects"
+          name = "Projects"
+          url = "/projects"
+          weight = 30
+
+
+
+        [[languages.en.menu.main]]
+          identifier = "all-blog-posts"
+          name = "All Blog Posts"
+          url = "/all-blog-posts"
+          weight = 40
+
+        [[languages.en.menu.main]]
+          identifier = "all-projects"
+          name = "All Projects"
+          url = "/all-projects"
+          weight = 50

@@ -1,0 +1,69 @@
+{{ define "main" }}
+<article class="post">
+    <h1 class="post-title">
+        <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    </h1>
+
+    <div class="post-content">
+        {{- with .Content -}}
+        <div>
+            {{ . | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `${1}<a href="#${2}" class="hanchor" ariaLabel="Anchor">#</a> ${3}` | safeHTML }}
+        </div>
+        {{- end -}}
+    </div>
+
+    <div class="posts">
+        {{ $paginator := .Paginate (where site.RegularPages "Section" "projects") }}
+
+        {{ range $paginator.Pages }}
+        <article class="post on-list">
+            <h2 class="post-title">
+                <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+            </h2>
+
+            <div class="post-meta">
+                {{- if .Date -}}
+                <time class="post-date">
+                    {{- partial "post-date" . -}}
+                </time>
+                {{- end -}}
+                {{- if and (.Param "readingTime") (eq (.Param "readingTime") true) -}}
+                <span class="post-reading-time">{{ .ReadingTime }} {{ $.Site.Params.minuteReadingTime | default "min read" }}</span>
+                {{- end -}}
+            </div>
+
+            {{ if .Params.tags }}
+            <span class="post-tags">
+            {{ range .Params.tags }}
+            #<a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">
+              {{- . -}}
+                </a>&nbsp;
+            {{ end }}
+          </span>
+            {{ end }}
+
+            {{ partial "cover.html" . }}
+
+            <div class="post-content">
+                {{ if .Params.showFullContent }}
+                {{ .Content }}
+                {{ else if .Description }}
+                <p>{{ .Description | markdownify }}</p>
+                {{ else }}
+                {{ .Summary }}
+                {{ end }}
+            </div>
+
+            <!--{{ if not .Params.showFullContent }}
+             <div>
+               <a class="read-more button inline" href="{{ .RelPermalink }}">[{{ $.Site.Params.ReadMore }}]</a>
+             </div>
+           {{ end }}-->
+        </article>
+        {{ end }}
+
+        {{ partial "pagination.html" . }}
+    </div>
+
+</article>
+{{ end }}

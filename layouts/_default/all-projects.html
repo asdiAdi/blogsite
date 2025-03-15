@@ -1,0 +1,14 @@
+{{ define "main" }}
+<article class="post">
+    <h1 class="post-title">
+        <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+    </h1>
+    <!--<h3 style="margin-bottom: 0.5rem">Most recent 10 posts</h3>-->
+    {{ range where site.RegularPages "Section" "projects" }}
+    <div>
+        {{ .Date.Format "Jan-02-06" }} <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </div>
+    {{ end }}
+
+</article>
+{{ end }}
