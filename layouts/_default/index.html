@@ -37,7 +37,9 @@
           </span>
         {{ end }}
 
-        {{ partial "cover.html" . }}
+        <a href="{{ .Permalink }}">
+         {{ partial "cover.html" . }}
+        </a>
 
         <div class="post-content">
           {{ if .Params.showFullContent }}
@@ -48,7 +50,6 @@
             {{ .Summary }}
           {{ end }}
         </div>
-
         <!--{{ if not .Params.showFullContent }}
          <div>
            <a class="read-more button inline" href="{{ .RelPermalink }}">[{{ $.Site.Params.ReadMore }}]</a>

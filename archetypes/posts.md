@@ -3,7 +3,7 @@ title = "{{ replace .TranslationBaseName "-" " " | title }}"
 date = "{{ .Date }}"
 draft = true
 cover = ""
-tags = [""]
+#tags = [""]
 showFullContent = false
 hideComments = true
 
@@ -11,3 +11,9 @@ hideComments = true
 #keywords = [""]
 #description = ""
 +++
+
+<!--more-->
+
+{{< details summary="TLDR" >}}
+- Add
+{{< /details >}}

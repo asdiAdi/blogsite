@@ -16,6 +16,7 @@ sudo apt install hugo
 
 git clone https://github.com/asdiAdi/blogsite.git
 cd blogsite
+git submodule update
 hugo server
 ```
 
