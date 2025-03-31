@@ -1,7 +1,7 @@
 +++
 title = "Portfolio"
 date = "2025-03-05"
-draft = true
+draft = false
 cover = "/images/portfolio-cover.png"
 #tags = [""]
 showFullContent = false
@@ -11,7 +11,7 @@ hideComments = true
 #keywords = [""]
 #description = ""
 +++
-
+I made a portfolio website.
 <!--more-->
 
 {{< details summary="TLDR" >}}

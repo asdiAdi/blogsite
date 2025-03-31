@@ -14,7 +14,7 @@ hideComments = true
 [Website](https://connect4.carladi.com)
 [Github](https://github.com/asdiAdi/connect4)
 
-I made a full-stack connect 4 game hosted on AWS EC2 using React and Nestjs.
+I made a full-stack connect 4 game hosted on AWS EC2 using React and Node.js.
 <!--more-->
 
 {{< details summary="TLDR" >}}

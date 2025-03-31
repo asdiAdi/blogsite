@@ -11,7 +11,7 @@ hideComments = true
 #keywords = [""]
 #description = ""
 +++
-
+I made a full-stack e-commerce app hosted on AWS EC2 using Next.js and Nest.js.
 <!--more-->
 
 {{< details summary="TLDR" >}}
