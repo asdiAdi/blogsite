@@ -13,7 +13,7 @@ hideComments = true
 +++
 [Github](https://github.com/asdiAdi/codecrafters-shell-csharp)
 
-Challenge attempt of creating my own [Shell](https://app.codecrafters.io/courses/shell/overview).
+Challenge attempt for creating my own [Shell](https://app.codecrafters.io/courses/shell/overview).
 
 <!--more-->
 
