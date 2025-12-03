@@ -3,7 +3,7 @@ title = 'About'
 readingTime = false
 +++
 
-Hi, I'm Carl, a web developer with over two years of experience in frontend development,now transitioning into full-stack development.
+Hi, I'm Carl, a web developer specializing in frontend development,now transitioning into full-stack development.
 I specialize in JavaScript related frameworks with growing expertise in backend and cloud development using AWS web services.
 
 I enjoy building web applications and exploring new technologies to push my skills further.

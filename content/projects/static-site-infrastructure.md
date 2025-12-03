@@ -2,7 +2,7 @@
 title = "Static Site Infrastructure"
 date = "2025-03-13"
 draft = false
-cover = "/images/static-site-infrastructure-cover.png"
+cover = "/images/cover/static-site-infrastructure.png"
 #tags = [""]
 showFullContent = false
 hideComments = true

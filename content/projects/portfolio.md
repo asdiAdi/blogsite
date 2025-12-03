@@ -2,7 +2,7 @@
 title = "Portfolio"
 date = "2025-03-05"
 draft = false
-cover = "/images/portfolio-cover.png"
+cover = "/images/cover/portfolio.png"
 #tags = [""]
 showFullContent = false
 hideComments = true

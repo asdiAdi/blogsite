@@ -2,7 +2,7 @@
 title = "Ecommerce"
 date = "2025-02-24"
 draft = false
-cover = "/images/ecommerce-cover.png"
+cover = "/images/cover/ecommerce.png"
 #tags = [""]
 showFullContent = false
 hideComments = true

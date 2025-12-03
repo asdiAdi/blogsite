@@ -2,7 +2,7 @@
 title = "Http Server"
 date = "2025-04-07"
 draft = false
-cover = "images/http-server-cover.png"
+cover = "/images/cover/http-server.png"
 #tags = [""]
 showFullContent = false
 hideComments = true

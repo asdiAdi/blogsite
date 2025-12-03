@@ -2,7 +2,7 @@
 title = "Connect4 App"
 date = "2025-01-23"
 draft = false
-cover = "/images/connect-4-cover.png"
+cover = "/images/cover/connect-4.png"
 #tags = [""]
 showFullContent = false
 hideComments = true

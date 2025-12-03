@@ -2,12 +2,6 @@
 
 This site is built using Hugo, a fast and flexible static site generator. Here, I share whatever I can think of.
 
-## Features
-- Fast and lightweight static site powered by Hugo
-- SEO-optimized with meta tags and structured content
-- Categorized posts for easy navigation
-- Responsive and mobile-friendly design
-
 ## Installation
 To run this blog locally, install Hugo and clone the repository:
 ```sh

@@ -2,7 +2,7 @@
 title = "Shell"
 date = "2025-03-31"
 draft = false
-cover = "images/shell-cover.png"
+cover = "images/cover/shell.png"
 #tags = [""]
 showFullContent = false
 hideComments = true
