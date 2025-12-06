@@ -1,5 +1,5 @@
 +++
-title = "Http Server"
+title = "I made my own Http Server"
 date = "2025-04-07"
 draft = false
 cover = "/images/cover/http-server.png"

@@ -1,5 +1,5 @@
 +++
-title = "Shell"
+title = "I made my own Shell"
 date = "2025-03-31"
 draft = false
 cover = "images/cover/shell.png"
