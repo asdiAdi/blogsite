@@ -5,12 +5,15 @@ This site is built using Hugo, a fast and flexible static site generator. Here, 
 ## Installation
 To run this blog locally, install Hugo and clone the repository:
 ```sh
-# linux
+# debian based distros
 latest_version=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
 wget https://github.com/gohugoio/hugo/releases/download/${latest_version}/hugo_extended_${latest_version#v}_linux-amd64.deb
 sudo dpkg -i hugo_extended_${latest_version#v}_linux-amd64.deb
 
-git clone https://github.com/asdiAdi/blogsite.git
+# arch linux
+sudo pacman -S hugo
+
+git clone git@github.com:asdiAdi/blogsite.git
 cd blogsite
 git submodule update --init --recursive
 hugo server
