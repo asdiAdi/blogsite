@@ -43,4 +43,3 @@ I still kept the invite user to play though, even if it doesn't work most of the
 
 I hosted it on AWS after learning how to make an ec2 instance.
 I was worried about the costs, so I made a fail-over site and set it up such that the ec2 instance will only stay up for 1 hour before shutting down.
-You can read more on how that works [here](https://carladi.com/posts).

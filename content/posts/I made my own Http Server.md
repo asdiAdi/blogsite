@@ -2,6 +2,7 @@
 title = "I made my own Http Server"
 date = "2025-04-07"
 draft = false
+noindex = true
 cover = "/images/cover/http-server.png"
 #tags = [""]
 showFullContent = false
@@ -10,6 +11,12 @@ hideComments = true
 #for SEO
 #keywords = [""]
 #description = ""
+
+[build]
+  list = 'never'
+
+[sitemap]
+  disable = true
 +++
 [Github](https://github.com/asdiAdi/codecrafters-http-server-csharp)
 

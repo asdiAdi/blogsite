@@ -2,6 +2,7 @@
 title = "Portfolio"
 date = "2025-03-05"
 draft = false
+noindex = true
 cover = "/images/cover/portfolio.png"
 #tags = [""]
 showFullContent = false
@@ -10,6 +11,12 @@ hideComments = true
 #for SEO
 #keywords = [""]
 #description = ""
+
+[build]
+  list = 'never'
+
+[sitemap]
+  disable = true
 +++
 [Website](https://portfolio.carladi.com)
 [Github](https://github.com/asdiAdi/portfolio)

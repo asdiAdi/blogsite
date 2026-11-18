@@ -96,11 +96,11 @@ pagination.pagerSize = 10
           url = "/about"
           weight = 10
 
-        [[languages.en.menu.main]]
-          identifier = "blog"
-          name = "Blog"
-          url = "/posts"
-          weight = 20
+        # [[languages.en.menu.main]]
+        #   identifier = "blog"
+        #   name = "Blog"
+        #   url = "/posts"
+        #   weight = 20
 
         [[languages.en.menu.main]]
           identifier = "projects"
@@ -110,11 +110,11 @@ pagination.pagerSize = 10
 
 
 
-        [[languages.en.menu.main]]
-          identifier = "all-blog-posts"
-          name = "All Blog Posts"
-          url = "/all-blog-posts"
-          weight = 40
+        # [[languages.en.menu.main]]
+        #   identifier = "all-blog-posts"
+        #   name = "All Blog Posts"
+        #   url = "/all-blog-posts"
+        #   weight = 40
 
         [[languages.en.menu.main]]
           identifier = "all-projects"

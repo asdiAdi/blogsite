@@ -2,6 +2,7 @@
 title = "First Blog"
 date = "2025-03-10"
 draft = false
+noindex = true
 cover = ""
 #tags = [""]
 showFullContent = false
@@ -10,6 +11,12 @@ hideComments = true
 #for SEO
 #keywords = [""]
 #description = ""
+
+[build]
+  list = 'never'
+
+[sitemap]
+  disable = true
 +++
 Why did I make did website?
 <!--more-->

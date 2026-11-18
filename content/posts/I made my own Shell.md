@@ -2,6 +2,7 @@
 title = "I made my own Shell"
 date = "2025-03-31"
 draft = false
+noindex = true
 cover = "images/cover/shell.png"
 #tags = [""]
 showFullContent = false
@@ -10,6 +11,12 @@ hideComments = true
 #for SEO
 #keywords = [""]
 #description = ""
+
+[build]
+  list = 'never'
+
+[sitemap]
+  disable = true
 +++
 [Github](https://github.com/asdiAdi/codecrafters-shell-csharp)
 

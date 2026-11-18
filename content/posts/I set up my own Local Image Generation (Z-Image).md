@@ -2,6 +2,7 @@
 title = "I set up my own Local Image Generation (Z-Image)"
 date = "2025-12-05"
 draft = false
+noindex = true
 cover = "images/cover/z-image.png"
 #tags = [""]
 showFullContent = false
@@ -10,6 +11,12 @@ hideComments = true
 #for SEO
 #keywords = [""]
 #description = ""
+
+[build]
+  list = 'never'
+
+[sitemap]
+  disable = true
 +++
 
 <!--more-->

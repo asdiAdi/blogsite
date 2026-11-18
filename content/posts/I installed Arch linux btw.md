@@ -2,6 +2,7 @@
 title = "I installed Arch linux btw"
 date = "2025-12-06"
 draft = false
+noindex = true
 cover = "/images/cover/arch_linux.png"
 #tags = [""]
 showFullContent = false
@@ -10,6 +11,12 @@ hideComments = true
 #for SEO
 #keywords = [""]
 #description = ""
+
+[build]
+  list = 'never'
+
+[sitemap]
+  disable = true
 +++
 
 <!--more-->
