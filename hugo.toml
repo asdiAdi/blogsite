@@ -1,5 +1,5 @@
 baseURL = 'https://carladi.com/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'My New Hugo Site'
 theme = 'terminal'
 pagination.pagerSize = 10
@@ -68,7 +68,7 @@ pagination.pagerSize = 10
 
 [languages]
   [languages.en]
-    languageName = "English"
+    label = "English"
     title = "Carl Adi"
 
     [languages.en.params]
